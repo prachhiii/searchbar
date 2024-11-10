@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: rgba(255, 255, 255,0.8);
+}
+.container-fluid{
+    background-image: radial-gradient( circle 857px at 3.1% 9.3%, rgb(78, 53, 96) 0%, rgb(36, 1, 31) 100.1% );
+}
+
+ .search-div input{
+    background-color: rgba(0, 0, 0, 0.8);
+    
+} 
+.search-btn{
+    
+    background-color: rgb(126, 63, 139);
+
+} 
+ .search-btn:hover{
+    background-color: rgb(24, 62, 251);
+    cursor: pointer;
+} 
+ .user-profile{
+    background-color: rgba(78, 34, 98, 0.8);
+    
+} 
+.followrepo{
+    background-color: rgba(8, 8, 51,0.6);
+}

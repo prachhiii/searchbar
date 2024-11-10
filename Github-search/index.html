@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Fontaweseom icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> 
+    <!-- Javascript link -->
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid w-100 vh-100 d-flex flex-column justify-content-center align-items-center ">
+        <div class="heading d-flex align-items-center">
+            <i class="fa-brands fa-github hicon mt-0 mx-2 mb-3 fs-1 "></i>
+            <h1 class="mt-0 mx-2 mb-3 fs-1 fw-bold">Search Github Profile</h1>
+        </div>
+        <div class="profile w-50">
+            <label class="search-div d-flex position-relative ">
+                <input type="text" placeholder="Enter Your UserName" id="loginid" class="w-100 m-auto p-3  py-3 fs-4 rounded-3 border-0 outline-0">
+                <button type="submit" class="search-btn position-absolute end-0 me-3 mt-2 py-2 px-3 fs-5 rounded-3 border-0 outline-0" onclick="getData()">Search</button>    
+            </label>
+           <div class="user-profile d-flex w-100 mt-2 rounded-3 justify-content-between py-5 px-2" id="user_details">
+               <div class="user-img w-25">
+                   <img src="download.png" alt="user image" class="uavatar w-75 rounded-circle ms-4">
+               </div>
+               <div class="user-info w-75 ms-5 me-3">
+                    <div class="username mb-3">
+                       <h3 class="fs-4 mb-2 fw-bold">
+                           User ID:- <span id="uid"></span>
+                       </h3>
+                       <h3 class="fs-4 mb-2 fw-bold">
+                            User Name:- <span id="uname"></span>
+                        </h3>
+                       <p class="fs-5 mb-1">
+                            Joined Date:- <span id="date"></span>
+                        </p>
+                   </div>
+                   <div class="followrepo d-flex w-100 my-4 rounded-2 justify-content-between align-items-center py-1 px-4">
+                       <div class="repo">
+                           <h4 class="fs-5 mt-2 mb-1 fw-bold">Repos</h4>
+                           <p id="gitrepo" class="text-center fs-5">0</p>
+                       </div>
+                       <div class="Followers">
+                           <h4 class="fs-5 mt-2 mb-1 fw-bold">Followers</h4>
+                           <p id="gitfoller" class="text-center fs-5">0</p>
+                       </div>
+                       <div class="Following">
+                           <h4 class="fs-5 mt-2 mb-1 fw-bold">Following</h4>
+                           <p id="gitfollow" class="text-center fs-5">0</p>
+                       </div>
+                    </div>
+                    <div class="socials w-100 d-flex flex-wrap">
+                        <div class="location d-flex w-50 mt-3 pb-3">
+                            <i class="fa-solid fa-location-dot icon pe-3 fs-5"></i>
+                            <p id="gitlocation" class="fs-5">Not Available</p>
+                        </div>
+                        <div class="location d-flex w-50 mt-3 pb-3">
+                            <i class="fa-brands fa-twitter icon pe-3 fs-5"></i>
+                            <p id="gittwitter " class="fs-5">Not Available</p>
+                        </div>
+                        <div class="location d-flex w-50 mt-2 pb-1">
+                            <i class="fa-brands fa-github icon pe-3 fs-5"></i>
+                            <p id="gitprofile" class="fs-5">Not Available</p>
+                        </div>
+                        <div class="location d-flex w-50 mt-2 pb-1">
+                            <i class="fa-solid fa-building icon pe-3 fs-5"></i>
+                            <p id="gitwork" class="fs-5">Not Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+</body>
+</html>
